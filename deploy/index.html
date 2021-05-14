@@ -18,24 +18,48 @@
 	
 
 	<body>
-		<!-- this is the cascading dropdown form -->
-		<form name="form1" id="form1" action="/action_page.php">
-		         <select name="subject" id="subject">
-		                <option value="" selected="selected">Select language</option>
+		<header>
+		     <!-- this is the cascading dropdown form for language -->
+		     <form name="form1" id="form1" action="/action_page.php">
+		        <select name="subject" id="subject">
+		            <option value="" selected="selected">Select language</option>
 		        </select>
-		</form>
+		    </form>
 		
-		<div>
+		    <div>
 		        <h1>shop north 5th</h1>
 		        <i class="fas fa-globe-americas"></i>
-		</div>
+		    </div>
 		
-		<a href="#"> <button type="button">donate</button> </a>
+		    <a href="#"> <button type="button">donate</button></a>  
 		
-		<hr>
+		    <section class="nav-wrapper">
+		        <section class="burger-wrapper">
+		            <i class="fas fa-bars" id="burger-icon"></i>
+		        </section>
+		        <nav id="nav-container" data-nav="main-navigation">
+		            <ul>
+		                <li><a href="#" class="nav-btns">Our Story</a></li>
+		                <li><a href="#" class="nav-btns">Shop</a></li>
+		                <li><a href="#" class="nav-btns">Events</a></li>
+		                <li><a href="#" class="nav-btns">News</a></li>
+		                <li><a href="#" class="nav-btns">Volunteer</a></li>
+		                <li><a href="#" class="nav-btns">Resources</a></li>
+		                <li><a href="#" class="nav-btns">COVID-19</a></li>
+		            </ul>
+		        </nav>
+		    </section>
 		
-		<img src="img/alert.svg" alt="alert symbol">
-		<p>N5SRP staff is here to provide support and resources to our community members that have been impacted by the <a href="#">COVID-19 coronavirus pandemic.</a></p>
+		    <div>
+		        <img src="img/alert.svg" alt="alert symbol">
+		        <p>
+		            N5SRP staff is here to provide support and resources to
+		            our community members that have been impacted by the
+		            <a href="#">COVID-19 coronavirus pandemic.</a>
+		        </p>
+		    </div>
+		
+		</header>
 		<div class="hero">
 				            <div class="hero-img"></div>
 				                <div class="mainherotext">where global is local</div>
