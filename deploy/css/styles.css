@@ -408,3 +408,90 @@ p {
   height: 80vh;
   background-position: center;
 }
+
+.ourstoryimg {
+  background-image: url("../img/ourstory.jpg");
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+}
+
+.eat {
+  background-image: url("../img/eat.jpg");
+  height: 195px;
+  width: 239px;
+  background-size: cover;
+  background-position: center;
+}
+
+.shop {
+  background-image: url("../img/shop.jpg");
+  height: 195px;
+  width: 239px;
+  background-size: cover;
+  background-position: center;
+}
+
+.service {
+  background-image: url("../img/service.jpg");
+  height: 195px;
+  width: 239px;
+  background-size: cover;
+  background-position: center;
+}
+
+.celebrate {
+  background-image: url("../img/celebrate.jpg");
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.covid2 {
+  background-image: url("../img/covid.jpg");
+  height: 180px;
+  background-size: cover;
+  background-position: center;
+}
+
+.sign {
+  background-image: url("../img/sign.jpg");
+  height: 180px;
+  background-size: cover;
+  background-position: center;
+}
+
+.street {
+  background-image: url("../img/street.jpg");
+  height: 180px;
+  background-size: cover;
+  background-position: center;
+}
+
+.people {
+  background-image: url("../img/people.jpg");
+  height: 180px;
+  background-size: cover;
+  background-position: center;
+}
+
+.shine1 {
+  background-image: url("../img/shine1.jpg");
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+}
+
+.shine2 {
+  background-image: url("../img/shine2.jpg");
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+}
+
+.support {
+  background-image: url("../img/support.jpg");
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+}
