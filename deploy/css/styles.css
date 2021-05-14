@@ -401,3 +401,10 @@ p {
 .section-title {
   font-weight: 300;
 }
+
+.hero-img {
+  background-image: url("../img/hero.jpg");
+  background-size: cover;
+  height: 80vh;
+  background-position: center;
+}
