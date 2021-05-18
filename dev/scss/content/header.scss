@@ -1,0 +1,17 @@
+.burgernav {
+    @include md {
+        display: none !important;
+    }
+}
+
+.navitems {
+    @include lg {
+        display: inline-block;
+    }
+}
+
+.logo2 {
+    @include xl {
+        margin: 0px 240px;
+    }
+}

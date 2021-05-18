@@ -368,12 +368,31 @@ ul li {
 .nav .form {
   display: flex;
   justify-content: flex-end;
+  margin-top: -55px;
+}
+@media (min-width: 768px) {
+  .nav .form {
+    margin: 0px;
+  }
 }
 .nav .logo {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  margin-top: 20px;
+}
+@media (min-width: 768px) {
+  .nav .logo {
+    display: flex;
+    flex-direction: row !important;
+  }
+}
+@media (min-width: 768px) {
+  .nav .logo2 {
+    display: grid;
+    grid-template-columns: 400px auto;
+    align-items: baseline;
+  }
 }
 .nav .covid {
   display: flex;
@@ -384,7 +403,7 @@ ul li {
 .nav #burger-container {
   display: flex;
   justify-content: center;
-  margin: 30px;
+  margin: 60px;
   font-size: 40px;
 }
 
@@ -427,6 +446,24 @@ p {
 
 .section-title {
   font-weight: 300;
+}
+
+@media (min-width: 768px) {
+  .burgernav {
+    display: none !important;
+  }
+}
+
+@media (min-width: 1024px) {
+  .navitems {
+    display: inline-block;
+  }
+}
+
+@media (min-width: 1200px) {
+  .logo2 {
+    margin: 0px 240px;
+  }
 }
 
 .hero-img {
