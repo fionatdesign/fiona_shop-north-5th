@@ -471,6 +471,38 @@ p {
   background-size: cover;
   height: 80vh;
   background-position: center;
+  position: relative;
+}
+
+.mainherotext {
+  position: absolute;
+  top: 500px;
+  left: 16px;
+  font-size: 4.5rem;
+}
+@media (min-width: 768px) {
+  .mainherotext {
+    position: absolute;
+    top: 400px;
+    left: 16px;
+    font-size: 4.5rem;
+  }
+}
+@media (min-width: 1024px) {
+  .mainherotext {
+    position: absolute;
+    top: 360px;
+    left: 16px;
+    font-size: 4.5rem;
+  }
+}
+@media (min-width: 1200px) {
+  .mainherotext {
+    position: absolute;
+    top: 300px;
+    font-size: 6.25rem;
+    margin-left: 220px;
+  }
 }
 
 .ourstoryimg {
