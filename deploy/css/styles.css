@@ -454,6 +454,14 @@ p {
     margin: 0px 240px;
   }
 }
+header .covid {
+  margin: 40px;
+}
+@media (min-width: 768px) {
+  header .covid {
+    margin: 40px 200px;
+  }
+}
 header #button-container {
   padding: 10px;
   text-align: right;
