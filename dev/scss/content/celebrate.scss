@@ -1,6 +1,13 @@
-.celebrate {
-    background-image: url("../img/celebrate.jpg");
-    height: 50vh;
-    background-size: cover;
-    background-position: center;
+.events {
+    .celebrate {
+        background-image: url("../img/celebrate.jpg");
+        height: 50vh;
+        background-size: cover;
+        background-position: center;
+        margin: 16px;
+    }
+    
+    .celebrate-text{
+        margin: 16px;
+    }
 }

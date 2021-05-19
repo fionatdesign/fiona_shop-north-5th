@@ -1,6 +1,22 @@
-.ourstoryimg {
-background-image: url("../img/ourstory.jpg");
-height: 400px;
-background-size: cover;
-background-position: center;
+.ourstory {
+    margin: 100px 0px 80px;
+    @include md {
+        margin: 75px;
+    }
+    @include lg {
+        margin: 100px;
+    }
+    @include xl {
+        margin: 150px 240px;
+    }
+    .ourstoryimg {
+        background-image: url("../img/ourstory.jpg");
+        height: 400px;
+        background-size: cover;
+        background-position: center;
+        }
+
+    p {
+        padding: 30px;
+    }
 }

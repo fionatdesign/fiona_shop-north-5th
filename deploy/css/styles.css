@@ -583,89 +583,146 @@ header #nav-container ul li {
   position: relative;
 }
 
-.ourstoryimg {
+.ourstory {
+  margin: 100px 0px 80px;
+}
+@media (min-width: 768px) {
+  .ourstory {
+    margin: 75px;
+  }
+}
+@media (min-width: 1024px) {
+  .ourstory {
+    margin: 100px;
+  }
+}
+@media (min-width: 1200px) {
+  .ourstory {
+    margin: 150px 240px;
+  }
+}
+.ourstory .ourstoryimg {
   background-image: url("../img/ourstory.jpg");
   height: 400px;
   background-size: cover;
   background-position: center;
 }
+.ourstory p {
+  padding: 30px;
+}
 
-.eat {
+.ourshops {
+  margin: 60px 0px;
+}
+.ourshops .eat {
   background-image: url("../img/eat.jpg");
   height: 195px;
   width: 239px;
   background-size: cover;
   background-position: center;
 }
-
-.shop {
+.ourshops .shop {
   background-image: url("../img/shop.jpg");
   height: 195px;
   width: 239px;
   background-size: cover;
   background-position: center;
 }
-
-.service {
+.ourshops .service {
   background-image: url("../img/service.jpg");
   height: 195px;
   width: 239px;
   background-size: cover;
   background-position: center;
 }
+.ourshops .ourshops-content p {
+  width: 239px;
+}
+@media (min-width: 768px) {
+  .ourshops .ourshops-content {
+    display: grid;
+    grid-template-columns: 250px 250px auto;
+    justify-content: center;
+  }
+}
 
-.celebrate {
+.events .celebrate {
   background-image: url("../img/celebrate.jpg");
   height: 50vh;
   background-size: cover;
   background-position: center;
+  margin: 16px;
+}
+.events .celebrate-text {
+  margin: 16px;
 }
 
-.covid2 {
+.news {
+  margin: 60px 0px;
+}
+.news .covid2 {
   background-image: url("../img/covid.jpg");
   height: 180px;
   background-size: cover;
   background-position: center;
 }
-
-.sign {
+.news .sign {
   background-image: url("../img/sign.jpg");
   height: 180px;
   background-size: cover;
   background-position: center;
 }
-
-.street {
+.news .street {
   background-image: url("../img/street.jpg");
   height: 180px;
   background-size: cover;
   background-position: center;
 }
-
-.people {
+.news .people {
   background-image: url("../img/people.jpg");
   height: 180px;
   background-size: cover;
   background-position: center;
 }
 
-.shine1 {
+.callout {
+  display: flex;
+  justify-content: center;
+  text-align: left;
+  padding: 30px;
+  margin: 150px 0px;
+}
+
+.volunteer {
+  margin: 60px 0px;
+}
+.volunteer .shine1 {
   background-image: url("../img/shine1.jpg");
   height: 300px;
   background-size: cover;
   background-position: center;
 }
-
-.shine2 {
+.volunteer .shine2 {
   background-image: url("../img/shine2.jpg");
   height: 300px;
   background-size: cover;
   background-position: center;
 }
 
-.support {
+.resources {
+  margin: 60px 0px;
+}
+.resources .support {
   background-image: url("../img/support.jpg");
   height: 300px;
   background-size: cover;
   background-position: center;
+}
+
+.newsletter h4 {
+  text-align: center;
+}
+.newsletter .signup {
+  padding: 12px;
+  margin: 10px;
 }
