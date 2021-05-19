@@ -1,17 +1,58 @@
-.burgernav {
-    @include md {
-        display: none !important;
+header {
+    .logo2 {
+        @include xl {
+            margin: 0px 240px;
+        }
     }
-}
 
-.navitems {
-    @include lg {
-        display: inline-block;
+    #button-container {
+        padding: 10px;
+        text-align: right;
     }
-}
 
-.logo2 {
-    @include xl {
-        margin: 0px 240px;
+    #burger-container {
+        @include md {
+            display: none !important;
+        }
+
+        i {
+            cursor: pointer;
+            font-size: rem-calc(30);
+        }
+    }
+
+    #nav-container {
+        display: none;
+        .nav-btns {
+            display: inline-block;
+            text-decoration: none;
+            margin: 0 auto;
+            padding: 20px 0;
+            width: 100%;
+            // &:hover {
+            //     background: $night;
+            // }
+            // &:active {
+            //     background: $electricYellow;
+            // }
+        }
+        ul li {
+            text-align: center;
+        }
+        @include md {
+            display: block !important;
+            position: unset;
+            width: auto;
+            // .nav-btns {
+            //     color: $nightDark;
+            // }
+            ul {
+                display: flex;
+                align-items: center;
+            }
+            ul li {
+                margin: 0 20px;
+            }
+        }
     }
 }

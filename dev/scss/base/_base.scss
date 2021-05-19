@@ -63,12 +63,13 @@ body {
 			// 	justify-content: space-between;
 			// 	align-items: center;
 			// 	text-align: center;
-
-				#burger-container {
-					display: flex;
-					justify-content: center;
-					margin: 60px 0px 20px;
-					font-size: 40px;
+				.burgernav {
+					#burger-container {
+						display: flex;
+						justify-content: center;
+						margin: 60px 0px 20px;
+						font-size: 50px;
+					}
 				}
 
 					.navitems {
