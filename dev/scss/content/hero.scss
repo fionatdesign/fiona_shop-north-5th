@@ -1,25 +1,73 @@
-.hero-img {
-    background-image: url("../img/hero.jpg");
-    background-size: cover;
-    height: 80vh;
-    background-position: center;
-    position: relative;
-}
-
-.hero-container {
-    position: relative;
-    text-align: left;
-}
-
-.mainherotext {
-    position: absolute;
-    bottom: 50px;
-    left: 20px;
-    --minFontSize: 80px;
-    --maxFontSize: 120px;
-    --scaler: 10vw;
-    font-size: clamp( var(--minFontSize), var(--scaler), var(--maxFontSize) );
-    @include xl {
-        left: 200px;
+.hero {
+    .hero-img {
+        background-image: url("../img/hero.jpg");
+        background-size: cover;
+        height: 80vh;
+        background-position: center;
+        position: relative;
     }
+    
+    .hero-container {
+        position: relative;
+        text-align: left;
+    }
+    
+    .mainherotext {
+        position: absolute;
+        bottom: 50px;
+        left: 20px;
+        --minFontSize: 80px;
+        --maxFontSize: 120px;
+        --scaler: 10vw;
+        font-size: clamp( var(--minFontSize), var(--scaler), var(--maxFontSize) );
+        @include xl {
+            left: 200px;
+        }
+    }
+
+    .mobiletext {
+        margin: 20px;
+        @include md {
+            display: none;
+        }
+        @include lg {
+            display: none;
+        }
+        @include xl {
+            display: none;
+        }
+    }
+
+    .herotext {
+        display: none;
+        @include md {
+            display: block;
+            margin: 0% 20%;
+            position: relative;
+            bottom: 30px;
+            line-height: 1.5;
+        }
+        @include lg {
+            display: block;
+            position: absolute;
+            bottom: -75px;
+            left: 300px;
+            background-color: black;
+            color: white;
+            padding: 30px;
+            line-height: 1.5;
+        }
+        @include xl {
+            display: block;
+            line-height: 1.5;
+            bottom: -75px;
+            left: 600px;
+            width: 20%;
+        }
+    }
+
+    .hero-container-text {
+        position: relative;
+    }
+
 }

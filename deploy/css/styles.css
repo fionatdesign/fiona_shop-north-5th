@@ -503,20 +503,18 @@ header #nav-container ul li {
   }
 }
 
-.hero-img {
+.hero .hero-img {
   background-image: url("../img/hero.jpg");
   background-size: cover;
   height: 80vh;
   background-position: center;
   position: relative;
 }
-
-.hero-container {
+.hero .hero-container {
   position: relative;
   text-align: left;
 }
-
-.mainherotext {
+.hero .mainherotext {
   position: absolute;
   bottom: 50px;
   left: 20px;
@@ -526,9 +524,63 @@ header #nav-container ul li {
   font-size: clamp( var(--minFontSize), var(--scaler), var(--maxFontSize) );
 }
 @media (min-width: 1200px) {
-  .mainherotext {
+  .hero .mainherotext {
     left: 200px;
   }
+}
+.hero .mobiletext {
+  margin: 20px;
+}
+@media (min-width: 768px) {
+  .hero .mobiletext {
+    display: none;
+  }
+}
+@media (min-width: 1024px) {
+  .hero .mobiletext {
+    display: none;
+  }
+}
+@media (min-width: 1200px) {
+  .hero .mobiletext {
+    display: none;
+  }
+}
+.hero .herotext {
+  display: none;
+}
+@media (min-width: 768px) {
+  .hero .herotext {
+    display: block;
+    margin: 0% 20%;
+    position: relative;
+    bottom: 30px;
+    line-height: 1.5;
+  }
+}
+@media (min-width: 1024px) {
+  .hero .herotext {
+    display: block;
+    position: absolute;
+    bottom: -75px;
+    left: 300px;
+    background-color: black;
+    color: white;
+    padding: 30px;
+    line-height: 1.5;
+  }
+}
+@media (min-width: 1200px) {
+  .hero .herotext {
+    display: block;
+    line-height: 1.5;
+    bottom: -75px;
+    left: 600px;
+    width: 20%;
+  }
+}
+.hero .hero-container-text {
+  position: relative;
 }
 
 .ourstoryimg {
