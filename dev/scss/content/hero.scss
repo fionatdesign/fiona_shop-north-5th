@@ -6,32 +6,20 @@
     position: relative;
 }
 
-// .hero-container {
-//     position: absolute;
-//     text-align: left;
-// }
+.hero-container {
+    position: relative;
+    text-align: left;
+}
 
-// .mainherotext {
-//     position: absolute;
-//     top: 500px;
-//     left: 16px;
-//     font-size: rem-calc(72);
-//     @include md {
-//     position: absolute;
-//     top: 400px;
-//     left: 16px;
-//     font-size: rem-calc(72);
-//     }
-//     @include lg {
-//         position: absolute;
-//         top: 360px;
-//         left: 16px;
-//         font-size: rem-calc(72);
-//     }
-//     @include xl {
-//         position: absolute;
-//         top: 300px;
-//         font-size: rem-calc(100);
-//         margin-left: 220px;
-//     }
-// }
+.mainherotext {
+    position: absolute;
+    bottom: 50px;
+    left: 20px;
+    --minFontSize: 80px;
+    --maxFontSize: 120px;
+    --scaler: 10vw;
+    font-size: clamp( var(--minFontSize), var(--scaler), var(--maxFontSize) );
+    @include xl {
+        left: 200px;
+    }
+}

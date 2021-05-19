@@ -511,6 +511,26 @@ header #nav-container ul li {
   position: relative;
 }
 
+.hero-container {
+  position: relative;
+  text-align: left;
+}
+
+.mainherotext {
+  position: absolute;
+  bottom: 50px;
+  left: 20px;
+  --minFontSize: 80px;
+  --maxFontSize: 120px;
+  --scaler: 10vw;
+  font-size: clamp( var(--minFontSize), var(--scaler), var(--maxFontSize) );
+}
+@media (min-width: 1200px) {
+  .mainherotext {
+    left: 200px;
+  }
+}
+
 .ourstoryimg {
   background-image: url("../img/ourstory.jpg");
   height: 400px;
