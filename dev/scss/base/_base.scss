@@ -15,6 +15,10 @@ ul {
 	}
 }
 
+body {
+	overflow-x: hidden;
+}
+
 .nav {
 	
 	.form {
@@ -53,12 +57,28 @@ ul {
 				justify-content: space-between;
 			}
 
+			// > div {
+			// 	display: flex;
+			// 	flex-direction: column;
+			// 	justify-content: space-between;
+			// 	align-items: center;
+			// 	text-align: center;
+
 				#burger-container {
 					display: flex;
 					justify-content: center;
-					margin: 60px;
+					margin: 60px 0px 20px;
 					font-size: 40px;
 				}
+
+					.navitems {
+						display: flex;
+						flex-direction: column;
+						justify-content: space-between;
+						align-items: center;
+						text-align: center;
+					}
+			
 }
 
 
@@ -74,21 +94,21 @@ ul {
 	}
 }
 
-footer {
-	.community {
-		ul {
-			li {
-			display: grid;
-			grid-template-rows: 30px 30px 30px 30px;
-			}
-		}
-	}
+// footer {
+// 	.community {
+// 		ul {
+// 			li {
+// 			display: grid;
+// 			grid-template-rows: 30px 30px 30px 30px;
+// 			}
+// 		}
+// 	}
 
-	.info {
-		.info2 {
-			display: grid;
-			grid-template-columns: 500px auto;
-			grid-template-rows: 30px;
-		}
-	}
-}
+// 	.info {
+// 		.info2 {
+// 			display: grid;
+// 			grid-template-columns: 500px auto;
+// 			grid-template-rows: 30px;
+// 		}
+// 	}
+// }
