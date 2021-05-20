@@ -672,15 +672,58 @@ header #nav-container ul li {
   left: 20px;
 }
 
+.events {
+  display: grid;
+}
+@media (min-width: 768px) {
+  .events {
+    grid-template-columns: 360px auto;
+  }
+}
+@media (min-width: 1024px) {
+  .events {
+    margin-left: 50px;
+    margin-top: 80px;
+  }
+  .events .celebrate {
+    height: 40vh;
+  }
+}
+@media (min-width: 1200px) {
+  .events {
+    margin: 210px;
+  }
+}
 .events .celebrate {
   background-image: url("../img/celebrate.jpg");
   height: 50vh;
   background-size: cover;
   background-position: center;
-  margin: 16px;
 }
 .events .celebrate-text {
-  margin: 16px;
+  margin-left: 16px;
+  display: none;
+}
+@media (min-width: 768px) {
+  .events .celebrate-text {
+    display: block;
+  }
+}
+
+@media (min-width: 768px) {
+  .events-mobile .celebrate-text-mobile {
+    display: none;
+  }
+}
+@media (min-width: 1024px) {
+  .events-mobile .celebrate-text-mobile {
+    display: none;
+  }
+}
+@media (min-width: 1200px) {
+  .events-mobile .celebrate-text-mobile {
+    display: none;
+  }
 }
 
 .news {

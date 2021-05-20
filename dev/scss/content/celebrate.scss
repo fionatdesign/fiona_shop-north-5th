@@ -1,13 +1,47 @@
 .events {
+    display: grid;
+
+    @include md {
+        grid-template-columns: 360px auto;
+    }
+
+    @include lg {
+        margin-left: 50px;
+        margin-top: 80px;
+        .celebrate {
+            height: 40vh;
+        }
+    }
+
+    @include xl {
+        margin: 210px;
+    }
     .celebrate {
         background-image: url("../img/celebrate.jpg");
         height: 50vh;
         background-size: cover;
         background-position: center;
-        margin: 16px;
     }
     
     .celebrate-text{
-        margin: 16px;
+        margin-left: 16px;
+        display: none;
+        @include md {
+            display: block;
+        }
+    }
+}
+
+.events-mobile {
+    .celebrate-text-mobile {
+        @include md {
+            display: none;
+        }
+        @include lg {
+            display: none;
+        }
+        @include xl {
+            display: none;
+        }
     }
 }
