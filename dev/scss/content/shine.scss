@@ -1,5 +1,15 @@
 .volunteer {
-    margin: 60px 0px;
+    margin: 60px 10px;
+    @include lg {
+        margin: 0px 50px;
+        grid-gap: 20px;
+    }
+    @include xl {
+        @include lg {
+            margin: 0px 250px;
+            grid-gap: 20px;
+        }
+    }
     .shine1 {
         background-image: url("../img/shine1.jpg");
         height: 300px;
@@ -12,5 +22,18 @@
         height: 300px;
         background-size: cover;
         background-position: center;
+    }
+
+    .volunteer-container {
+        @include md {
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-gap: 10px;
+        }
+    }
+
+    .shinebutton {
+        display: flex;
+        justify-content: center;
     }
 }

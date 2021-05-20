@@ -742,7 +742,19 @@ header #nav-container ul li {
 }
 
 .volunteer {
-  margin: 60px 0px;
+  margin: 60px 10px;
+}
+@media (min-width: 1024px) {
+  .volunteer {
+    margin: 0px 50px;
+    grid-gap: 20px;
+  }
+}
+@media (min-width: 1200px) and (min-width: 1024px) {
+  .volunteer {
+    margin: 0px 250px;
+    grid-gap: 20px;
+  }
 }
 .volunteer .shine1 {
   background-image: url("../img/shine1.jpg");
@@ -755,6 +767,17 @@ header #nav-container ul li {
   height: 300px;
   background-size: cover;
   background-position: center;
+}
+@media (min-width: 768px) {
+  .volunteer .volunteer-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 10px;
+  }
+}
+.volunteer .shinebutton {
+  display: flex;
+  justify-content: center;
 }
 
 .resources {
