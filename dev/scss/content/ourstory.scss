@@ -7,7 +7,7 @@
         margin: 100px;
     }
     @include xl {
-        margin: 150px 240px;
+        margin: 100px 240px;
     }
     .ourstoryimg {
         background-image: url("../img/ourstory.jpg");
@@ -16,7 +16,12 @@
         background-position: center;
         }
 
-    p {
-        padding: 30px;
+    .ourstory-info {
+        margin: 25px;
+        p {
+            margin-bottom: 20px;
+            background-color: $pearllight;
+            padding: 20px;
+        }
     }
 }

@@ -48,7 +48,7 @@ header {
         }
         @include md {
             display: block !important;
-            position: unset;
+            // position: unset;
             width: auto;
             // .nav-btns {
             //     color: $nightDark;

@@ -1,9 +1,15 @@
 .ourshops {
-    margin: 60px 0px;
+    margin: 40px;
+    @include lg {
+        margin: 0px 100px;
+    }
+    @include xl {
+        margin: 75px 240px;
+    }
     .eat {
         background-image: url("../img/eat.jpg");
         height: 195px;
-        width: 239px;
+        // width: 239px;
         background-size: cover;
         background-position: center;
     }
@@ -11,7 +17,7 @@
     .shop {
         background-image: url("../img/shop.jpg");
         height: 195px;
-        width: 239px;
+        // width: 239px;
         background-size: cover;
         background-position: center;
     }
@@ -19,19 +25,16 @@
     .service {
         background-image: url("../img/service.jpg");
         height: 195px;
-        width: 239px;
+        // width: 239px;
         background-size: cover;
         background-position: center;
     }
 
     .ourshops-content {
-        p {
-         width: 239px;   
-        }
         @include md {
             display: grid;
-            grid-template-columns: 250px 250px auto;
-            justify-content: center;
+            grid-template-columns: auto auto auto;
+            grid-gap: 10px;
         }
     }
 
