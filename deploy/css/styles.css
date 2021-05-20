@@ -653,6 +653,24 @@ header #nav-container ul li {
     grid-gap: 10px;
   }
 }
+.ourshops .ourshops-container {
+  position: relative;
+}
+.ourshops .eat-text {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+.ourshops .shop-text {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+.ourshops .service-text {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
 
 .events .celebrate {
   background-image: url("../img/celebrate.jpg");
