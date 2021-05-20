@@ -1,0 +1,29 @@
+footer {
+    @include md {
+        display: grid;
+        margin: 20px;
+            grid-template-columns: repeat(12, 1fr);
+            .community {
+                grid-column: 3 / 4;
+            }
+
+            .info {
+                grid-column: 6 / 8;
+            }
+
+            .contactus {
+                grid-column: 9 / 11;
+            }
+
+            .rights {
+                grid-column: 1 / 5;
+                grid-row: 2 / 3;
+            }
+    }
+    @include xl {
+        .community li{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}

@@ -727,7 +727,7 @@ header #nav-container ul li {
 }
 
 .news {
-  margin: 60px 40px;
+  margin: 60px 30px;
   display: grid;
   justify-content: center;
 }
@@ -839,4 +839,31 @@ header #nav-container ul li {
 .newsletter .signup {
   padding: 12px;
   margin: 10px;
+}
+
+@media (min-width: 768px) {
+  footer {
+    display: grid;
+    margin: 20px;
+    grid-template-columns: repeat(12, 1fr);
+  }
+  footer .community {
+    grid-column: 3/4;
+  }
+  footer .info {
+    grid-column: 6/8;
+  }
+  footer .contactus {
+    grid-column: 9/11;
+  }
+  footer .rights {
+    grid-column: 1/5;
+    grid-row: 2/3;
+  }
+}
+@media (min-width: 1200px) {
+  footer .community li {
+    display: flex;
+    flex-direction: column;
+  }
 }
