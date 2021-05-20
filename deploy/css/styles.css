@@ -684,7 +684,13 @@ header #nav-container ul li {
 }
 
 .news {
-  margin: 60px 0px;
+  margin: 60px 40px;
+  display: grid;
+  justify-content: center;
+}
+.news button {
+  margin: 0px 230px;
+  padding: 5px;
 }
 .news .covid2 {
   background-image: url("../img/covid.jpg");
@@ -709,6 +715,22 @@ header #nav-container ul li {
   height: 180px;
   background-size: cover;
   background-position: center;
+}
+@media (min-width: 768px) {
+  .news .news-section {
+    display: grid;
+    grid-template-columns: 300px 300px;
+    grid-template-rows: 200px auto;
+    grid-gap: 10px;
+  }
+}
+@media (min-width: 1024px) {
+  .news .news-container {
+    display: grid;
+    grid-template-columns: 500px 500px;
+    grid-template-rows: auto;
+    grid-gap: 10px;
+  }
 }
 
 .callout {
