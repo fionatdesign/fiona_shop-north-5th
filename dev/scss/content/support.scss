@@ -1,8 +1,20 @@
 .resources {
     margin: 60px 0px;
+
+    @include md {
+        display: grid;
+        grid-template-columns: auto 360px;
+    }
+    @include lg {
+        grid-template-columns: auto 400px;
+    }
+    @include xl {
+        margin: 70px 250px;
+        grid-template-columns: auto 300px;
+    }
     .support {
         background-image: url("../img/support.jpg");
-        height: 300px;
+        height: 320px;
         background-size: cover;
         background-position: center;
     } 
