@@ -60,6 +60,16 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/deploy\/img\/check-solid.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/deploy\/img\/check-solid.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
     "\/deploy\/img\/covid.jpg" : {
       "ft" : 16384,
       "iS" : 84996,

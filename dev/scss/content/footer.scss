@@ -1,4 +1,10 @@
 footer {
+    margin: 20px;
+    .community li{
+        display: flex;
+        flex-direction: column;
+    }
+    
     @include md {
         display: grid;
         margin: 20px;
@@ -24,6 +30,10 @@ footer {
         .community li{
             display: flex;
             flex-direction: column;
+        }
+
+        .rights {
+            grid-column: 3 / 7;
         }
     }
 }
