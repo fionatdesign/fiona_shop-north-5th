@@ -648,22 +648,7 @@ header #form1 {
 }
 
 .ourstory {
-  margin: 100px 0px 80px;
-}
-@media (min-width: 768px) {
-  .ourstory {
-    margin: 75px;
-  }
-}
-@media (min-width: 1024px) {
-  .ourstory {
-    margin: 100px;
-  }
-}
-@media (min-width: 1200px) {
-  .ourstory {
-    margin: 100px 240px;
-  }
+  margin: 80px 0px 80px;
 }
 .ourstory .ourstoryimg {
   background-image: url("../img/ourstory.jpg");
@@ -671,13 +656,73 @@ header #form1 {
   background-size: cover;
   background-position: center;
 }
-.ourstory .ourstory-info {
-  margin: 25px;
+@media (min-width: 768px) {
+  .ourstory .ourstoryimg {
+    margin: 75px;
+  }
+}
+@media (min-width: 1024px) {
+  .ourstory .ourstoryimg {
+    margin: 100px;
+  }
 }
 .ourstory .ourstory-info p {
   margin-bottom: 20px;
   background-color: #FDF6ED;
   padding: 20px;
+  font-family: "Shippori Mincho", serif;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.3;
+  color: #161313;
+}
+@media (min-width: 768px) {
+  .ourstory .ourstory-info {
+    margin: 75px;
+  }
+}
+@media (min-width: 1024px) {
+  .ourstory .ourstory-info {
+    margin: 100px;
+  }
+}
+@media (min-width: 1200px) {
+  .ourstory .ourstory-info {
+    margin: 100px 300px;
+  }
+}
+.ourstory .storybutton {
+  border: none;
+  border-radius: 3px;
+  padding: 5px 10px;
+  background-color: #EF8B43;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 0.875rem;
+  color: #FDF6ED;
+}
+.ourstory .story-container {
+  position: relative;
+}
+@media (min-width: 1200px) {
+  .ourstory .story-container {
+    margin: 100px 200px;
+  }
+}
+.ourstory .ourstorytitle {
+  position: absolute;
+  top: -20px;
+  background-color: #B4CEF8;
+  padding: 20px 80px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  color: #2B3864;
+  font-size: 1.875rem;
+}
+@media (min-width: 768px) {
+  .ourstory .ourstorytitle {
+    padding: 20px 80px;
+  }
 }
 
 .ourshops {

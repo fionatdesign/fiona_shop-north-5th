@@ -1,27 +1,69 @@
 .ourstory {
-    margin: 100px 0px 80px;
-    @include md {
-        margin: 75px;
-    }
-    @include lg {
-        margin: 100px;
-    }
-    @include xl {
-        margin: 100px 240px;
-    }
+    margin: 80px 0px 80px;
+    
     .ourstoryimg {
         background-image: url("../img/ourstory.jpg");
         height: 400px;
         background-size: cover;
         background-position: center;
+        @include md {
+            margin: 75px;
+        }
+        @include lg {
+            margin: 100px;
+        }
         }
 
     .ourstory-info {
-        margin: 25px;
+        // margin: 25px;
         p {
             margin-bottom: 20px;
             background-color: $pearllight;
             padding: 20px;
+            font-family: 'Shippori Mincho', serif;
+            font-weight: 400;
+            font-size: rem-calc(14);
+            line-height: 1.3;
+            color: $smokyblack;
+        }
+        @include md {
+            margin: 75px;
+        }
+        @include lg {
+            margin: 100px;
+        }
+        @include xl {
+            margin: 100px 300px;
+        }
+    }
+
+    .storybutton {
+        border: none;
+        border-radius: 3px;
+        padding: 5px 10px;
+        background-color: $tangolight;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 500;
+        font-size: rem-calc(14);
+        color: $pearllight;
+    }
+    .story-container {
+        position: relative;
+        @include xl {
+            margin: 100px 200px;
+        }
+    }
+    .ourstorytitle {
+        position: absolute;
+        top: -20px;
+        background-color: $sail;
+        padding: 20px 80px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 700;
+        color: $spacecadetlight;
+        font-size: rem-calc(30);
+        @include md {
+            padding: 20px 80px;
         }
     }
 }
