@@ -572,6 +572,9 @@ header #form1 {
 }
 .hero .mainherotext {
   position: absolute;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  color: white;
   bottom: 50px;
   left: 20px;
   --minFontSize: 80px;
@@ -585,7 +588,9 @@ header #form1 {
   }
 }
 .hero .mobiletext {
-  margin: 20px;
+  background-color: #1F2847;
+  padding: 20px;
+  color: white;
 }
 @media (min-width: 768px) {
   .hero .mobiletext {
@@ -612,6 +617,9 @@ header #form1 {
     position: relative;
     bottom: 30px;
     line-height: 1.5;
+    background-color: #1F2847;
+    color: white;
+    padding: 30px 40px;
   }
 }
 @media (min-width: 1024px) {
@@ -620,7 +628,7 @@ header #form1 {
     position: absolute;
     bottom: -75px;
     left: 300px;
-    background-color: black;
+    background-color: #1F2847;
     color: white;
     padding: 30px;
     line-height: 1.5;
