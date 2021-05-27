@@ -1,5 +1,6 @@
 .events {
     display: grid;
+    margin: 0px 20px;
 
     @include md {
         grid-template-columns: 360px auto;
@@ -14,7 +15,7 @@
     }
 
     @include xl {
-        margin: 210px;
+        margin: 0px 210px;
     }
     .celebrate {
         background-image: url("../img/celebrate.jpg");
@@ -24,16 +25,68 @@
     }
     
     .celebrate-text{
-        margin-left: 16px;
         display: none;
         @include md {
             display: block;
+            background-color: $sail;
+            padding: 30px;
+            h4 {
+                font-family: 'Poppins', sans-serif;
+                font-weight: 700;
+                font-size: rem-calc(30);
+                color: $spacecadetlight;
+            }
+            p {
+                font-family: 'Shippori Mincho', serif;
+                font-weight: 400;
+                color: $smokyblack;
+                font-size: rem-calc(14);
+                line-height: 1.5;
+                margin: 20px 0px;
+            }
+            button {
+                border: none;
+                border-radius: 3px;
+                background-color: $tangolight;
+                font-family: "Poppins", sans-serif;
+                font-weight: 500;
+                font-size: rem-calc(14);
+                padding: 5px 20px;
+                color: $pearllight;
+            }
         }
     }
 }
 
 .events-mobile {
+    h4 {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 700;
+        font-size: rem-calc(30);
+        padding: 23px 0px;
+    }
+    button {
+        margin-top: 20px;
+        border: none;
+        border-radius: 3px;
+        background-color: $tangolight;
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        font-size: rem-calc(14);
+        padding: 5px 20px;
+        color: $pearllight;
+    }
+    p {
+        font-family: 'Shippori Mincho', serif;
+        font-weight: 400;
+        color: $smokyblack;
+        font-size: rem-calc(14);
+        line-height: 1.4;
+    }
     .celebrate-text-mobile {
+        background-color: $sail;
+        margin: 0px 20px;
+        padding: 20px;
         @include md {
             display: none;
         }

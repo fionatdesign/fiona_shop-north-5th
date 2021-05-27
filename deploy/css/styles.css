@@ -830,6 +830,7 @@ header #form1 {
 
 .events {
   display: grid;
+  margin: 0px 20px;
 }
 @media (min-width: 768px) {
   .events {
@@ -847,7 +848,7 @@ header #form1 {
 }
 @media (min-width: 1200px) {
   .events {
-    margin: 210px;
+    margin: 0px 210px;
   }
 }
 .events .celebrate {
@@ -857,15 +858,69 @@ header #form1 {
   background-position: center;
 }
 .events .celebrate-text {
-  margin-left: 16px;
   display: none;
 }
 @media (min-width: 768px) {
   .events .celebrate-text {
     display: block;
+    background-color: #B4CEF8;
+    padding: 30px;
+  }
+  .events .celebrate-text h4 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 1.875rem;
+    color: #2B3864;
+  }
+  .events .celebrate-text p {
+    font-family: "Shippori Mincho", serif;
+    font-weight: 400;
+    color: #161313;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    margin: 20px 0px;
+  }
+  .events .celebrate-text button {
+    border: none;
+    border-radius: 3px;
+    background-color: #EF8B43;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 0.875rem;
+    padding: 5px 20px;
+    color: #FDF6ED;
   }
 }
 
+.events-mobile h4 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 1.875rem;
+  padding: 23px 0px;
+}
+.events-mobile button {
+  margin-top: 20px;
+  border: none;
+  border-radius: 3px;
+  background-color: #EF8B43;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 0.875rem;
+  padding: 5px 20px;
+  color: #FDF6ED;
+}
+.events-mobile p {
+  font-family: "Shippori Mincho", serif;
+  font-weight: 400;
+  color: #161313;
+  font-size: 0.875rem;
+  line-height: 1.4;
+}
+.events-mobile .celebrate-text-mobile {
+  background-color: #B4CEF8;
+  margin: 0px 20px;
+  padding: 20px;
+}
 @media (min-width: 768px) {
   .events-mobile .celebrate-text-mobile {
     display: none;
@@ -883,7 +938,9 @@ header #form1 {
 }
 
 .news {
-  margin: 60px 50px;
+  padding: 60px 50px;
+  margin-top: 70px;
+  background-color: #FDF6ED;
 }
 @media (min-width: 768px) {
   .news {
