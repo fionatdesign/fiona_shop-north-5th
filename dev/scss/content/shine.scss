@@ -1,5 +1,23 @@
 .volunteer {
     margin: 60px 10px;
+    hr {
+        height: 3px;
+        background-color: $spacecadet;
+        border: none;
+    }
+    h4 {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 700;
+        color: $spacecadetlight;
+        font-size: rem-calc(35);
+        margin-bottom: 10px;
+    }
+    p {
+        font-family: 'Shippori Mincho', serif;
+        font-weight: 400;
+        color: $smokyblack;
+        line-height: 1.5;
+    }
     @include lg {
         margin: 0px 50px;
         grid-gap: 20px;
@@ -35,5 +53,23 @@
     .shinebutton {
         display: flex;
         justify-content: center;
+    }
+
+    .shine1container {
+        margin-bottom: 30px;
+    }
+    .shine2container {
+        margin-bottom: 30px;
+    }
+    
+    button {
+        border: none;
+        border-radius: 3px;
+        background-color: $tangolight;
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        font-size: rem-calc(14);
+        padding: 5px 20px;
+        color: $pearllight;
     }
 }

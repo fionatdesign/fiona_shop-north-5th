@@ -1096,6 +1096,24 @@ header #form1 {
 .volunteer {
   margin: 60px 10px;
 }
+.volunteer hr {
+  height: 3px;
+  background-color: #212B4D;
+  border: none;
+}
+.volunteer h4 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  color: #2B3864;
+  font-size: 2.1875rem;
+  margin-bottom: 10px;
+}
+.volunteer p {
+  font-family: "Shippori Mincho", serif;
+  font-weight: 400;
+  color: #161313;
+  line-height: 1.5;
+}
 @media (min-width: 1024px) {
   .volunteer {
     margin: 0px 50px;
@@ -1130,6 +1148,22 @@ header #form1 {
 .volunteer .shinebutton {
   display: flex;
   justify-content: center;
+}
+.volunteer .shine1container {
+  margin-bottom: 30px;
+}
+.volunteer .shine2container {
+  margin-bottom: 30px;
+}
+.volunteer button {
+  border: none;
+  border-radius: 3px;
+  background-color: #EF8B43;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 0.875rem;
+  padding: 5px 20px;
+  color: #FDF6ED;
 }
 
 .resources {
