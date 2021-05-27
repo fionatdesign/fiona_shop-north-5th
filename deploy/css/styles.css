@@ -942,6 +942,17 @@ header #form1 {
   margin-top: 70px;
   background-color: #FDF6ED;
 }
+.news h4 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  color: #2B3864;
+  font-size: 2.1875rem;
+}
+.news hr {
+  height: 3px;
+  background-color: #212B4D;
+  border: none;
+}
 @media (min-width: 768px) {
   .news {
     display: grid;
@@ -959,11 +970,21 @@ header #form1 {
   background-size: cover;
   background-position: center;
 }
+@media (min-width: 768px) {
+  .news .covid2 {
+    margin-top: 15px;
+  }
+}
 .news .sign {
   background-image: url("../img/sign.jpg");
   height: 180px;
   background-size: cover;
   background-position: center;
+}
+@media (min-width: 768px) {
+  .news .sign {
+    margin-top: 15px;
+  }
 }
 .news .street {
   background-image: url("../img/street.jpg");
@@ -971,21 +992,33 @@ header #form1 {
   background-size: cover;
   background-position: center;
 }
+@media (min-width: 768px) {
+  .news .street {
+    margin-top: 15px;
+  }
+}
 .news .people {
   background-image: url("../img/people.jpg");
   height: 180px;
   background-size: cover;
   background-position: center;
 }
-.news .news-section {
+@media (min-width: 768px) {
+  .news .people {
+    margin-top: 15px;
+  }
+}
+.news .news-container .news-section {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-column: 1fr auto;
   grid-gap: 10px;
-  margin-bottom: 20px;
+  margin: 50px 0px;
+  border-top: 3px solid #212B4D;
+  border-bottom: 3px solid #212B4D;
 }
 @media (min-width: 768px) {
-  .news .news-section {
+  .news .news-container .news-section {
     display: grid;
     grid-template-columns: 300px auto;
     grid-template-rows: 200px auto;
@@ -1000,13 +1033,64 @@ header #form1 {
     grid-gap: 10px;
   }
 }
+.news .news-container .news-text {
+  margin-top: 15px;
+}
+.news .news-container .news-text p {
+  font-family: "Shippori Mincho", serif;
+  font-weight: 400;
+  color: #161313;
+  font-size: 0.6875rem;
+  line-height: 1.5;
+}
+.news .news-container .news-text h5 {
+  font-family: "Shippori Mincho", serif;
+  font-weight: 700;
+  color: #161313;
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+.news .news-container .news-text a {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: #EB7118;
+  font-size: 0.8125rem;
+}
+.news .newsbutton button {
+  border: none;
+  border-radius: 3px;
+  background-color: #EF8B43;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 0.875rem;
+  padding: 5px 10px;
+  color: #FDF6ED;
+}
 
 .callout {
   display: flex;
   justify-content: center;
   text-align: left;
-  padding: 30px;
-  margin: 150px 0px;
+  padding: 150px;
+  font-family: "Poppins", sans-serif;
+  background-color: #1F2847;
+  font-size: 4.375rem;
+  margin-bottom: 100px;
+}
+.callout .historic {
+  color: #EF8B43;
+}
+.callout .diverse {
+  color: #B4CEF8;
+}
+.callout p {
+  color: white;
+  font-weight: 700;
+}
+@media (min-width: 1200px) {
+  .callout p {
+    padding: 0px 70px;
+  }
 }
 
 .volunteer {

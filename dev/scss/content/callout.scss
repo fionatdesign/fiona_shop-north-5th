@@ -2,6 +2,22 @@
     display: flex;
     justify-content: center;
     text-align: left;
-    padding: 30px;
-    margin: 150px 0px;
+    padding: 150px;
+    font-family: 'Poppins', sans-serif;
+    background-color: $spacecadetdark;
+    font-size: rem-calc(70);
+    margin-bottom: 100px;
+    .historic {
+        color: $tangolight;
+    }
+    .diverse {
+        color: $sail;
+    }
+    p {
+        color: white;
+        font-weight: 700;
+        @include xl {
+            padding: 0px 70px;
+        }
+    }
 }

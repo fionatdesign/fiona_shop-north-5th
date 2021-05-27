@@ -2,6 +2,17 @@
     padding: 60px 50px;
     margin-top: 70px;
     background-color: $pearllight;
+    h4 {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 700;
+        color: $spacecadetlight;
+        font-size: rem-calc(35);
+    }
+    hr {
+        height: 3px;
+        background-color: #212B4D;
+        border: none;
+    }
     @include md {
         display: grid;
         justify-content: center;
@@ -18,6 +29,9 @@
         height: 180px;
         background-size: cover;
         background-position: center;
+        @include md {
+            margin-top: 15px;
+        }
     }
     
     .sign {
@@ -25,6 +39,9 @@
         height: 180px;
         background-size: cover;
         background-position: center;
+        @include md {
+            margin-top: 15px;
+        }
     }
     
     .street {
@@ -32,6 +49,9 @@
         height: 180px;
         background-size: cover;
         background-position: center;
+        @include md {
+            margin-top: 15px;
+        }
     }
     
     .people {
@@ -39,28 +59,67 @@
         height: 180px;
         background-size: cover;
         background-position: center;
-    }
-
-    .news-section {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-column: 1fr auto;
-        grid-gap: 10px;
-        margin-bottom: 20px;
         @include md {
-            display: grid;
-            grid-template-columns: 300px auto;
-            grid-template-rows: 200px auto;
-            grid-gap: 10px;
+            margin-top: 15px;
         }
     }
 
     .news-container {
+        .news-section {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-column: 1fr auto;
+            grid-gap: 10px;
+            margin: 50px 0px;
+            border-top: 3px solid $spacecadet;
+            border-bottom: 3px solid $spacecadet;
+            @include md {
+                display: grid;
+                grid-template-columns: 300px auto;
+                grid-template-rows: 200px auto;
+                grid-gap: 10px;
+            }
+        }
         @include lg {
             display: grid;
             grid-template-columns: 500px 500px;
             grid-template-rows: auto;
             grid-gap: 10px;
+        }
+        .news-text {
+            margin-top: 15px;
+            p {
+                font-family: 'Shippori Mincho', serif;
+                font-weight: 400;
+                color: $smokyblack;
+                font-size: rem-calc(11);
+                line-height: 1.5;
+            }
+            h5 {
+                font-family: 'Shippori Mincho', serif;
+                font-weight: 700;
+                color: $smokyblack;
+                font-size: rem-calc(14);
+                line-height: 1.5;
+            }
+            a {
+                font-family: 'Poppins', sans-serif;
+                font-weight: 600;
+                color: $tango;
+                font-size: rem-calc(13);
+            }
+        }
+    }
+    .newsbutton {
+        button {
+            border: none;
+            border-radius: 3px;
+            background-color: $tangolight;
+            font-family: "Poppins", sans-serif;
+            font-weight: 500;
+            font-size: rem-calc(14);
+            padding: 5px 10px;
+            color: $pearllight;
         }
     }
 }
