@@ -3,19 +3,50 @@
 
     @include md {
         display: grid;
-        grid-template-columns: auto 360px;
+        grid-template-columns: auto 500px;
     }
     @include lg {
-        grid-template-columns: auto 400px;
+        grid-template-columns: auto 550px;
     }
     @include xl {
-        margin: 70px 250px;
-        grid-template-columns: auto 300px;
+        margin: 70px 200px;
+        grid-template-columns: auto 400px;
     }
     .support {
         background-image: url("../img/support.jpg");
-        height: 320px;
+        height: 360px;
         background-size: cover;
         background-position: center;
-    } 
+        @include xl {
+            height: 436px;
+        }
+    }
+    button {
+        border: none;
+        border-radius: 3px;
+        background-color: $tangolight;
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        font-size: rem-calc(14);
+        padding: 5px 20px;
+        color: $pearllight;
+        margin: 20px 0px;
+    }
+    h4 {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 700;
+        color: $spacecadetlight;
+        font-size: rem-calc(35);
+        margin-bottom: 10px;
+    }
+    p {
+        font-family: 'Shippori Mincho', serif;
+        font-weight: 400;
+        color: $smokyblack;
+        line-height: 1.5;
+    }
+    .support-text {
+        padding: 30px;
+        background-color: $sail;
+    }
 }
