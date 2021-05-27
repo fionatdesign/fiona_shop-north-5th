@@ -1,20 +1,30 @@
 footer {
-    margin: 20px;
+    padding: 20px;
+    background-color: $spacecadetdark;
+    h5 {
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+        color: white;
+        font-size: rem-calc(18);
+    }
     .community li{
         display: flex;
         flex-direction: column;
     }
-    
+    i {
+        font-size: rem-calc(30);
+        color: white;
+        margin-right: 20px;
+    }
     @include md {
         display: grid;
-        margin: 20px;
             grid-template-columns: repeat(12, 1fr);
             .community {
                 grid-column: 3 / 4;
             }
 
             .info {
-                grid-column: 6 / 8;
+                grid-column: 6 / 9;
             }
 
             .contactus {
@@ -34,6 +44,47 @@ footer {
 
         .rights {
             grid-column: 3 / 7;
+        }
+    }
+    ul a {
+        font-family: "Poppins", sans-serif;
+        font-weight: 300;
+        color: white;
+        font-size: rem-calc(14);
+        text-decoration: none;
+        margin-bottom: 20px;
+    }
+    .info2 {
+        margin-bottom: 20px;
+    }
+    .link {
+        margin-right: 20px;
+    }
+    .rights {
+        font-family: "Poppins", sans-serif;
+        font-weight: 200;
+        color: white;
+        font-size: rem-calc(10);
+        text-decoration: none;
+    }
+    .contact-info {
+        margin-bottom: 30px;
+        color: white;
+        p {
+            font-family: "Poppins", sans-serif;
+            font-style: normal;
+            color: white;
+            font-size: rem-calc(14);
+        }
+        address {
+            font-family: "Poppins", sans-serif;
+            font-style: normal;
+            color: white;
+            font-size: rem-calc(14);
+            margin-bottom: 20px;
+        }
+        p {
+            color: white;
         }
     }
 }

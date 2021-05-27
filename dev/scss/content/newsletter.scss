@@ -1,6 +1,22 @@
 .newsletter {
+    background-color: $saillight;
+    padding: 40px;
+    i {
+        font-size: rem-calc(85);
+        color: $spacecadetlight;
+    }
     h4 {
         text-align: center;
+        color: $spacecadetlight;
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+        font-size: rem-calc(30);
+    }
+    h5 {
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+        font-size: rem-calc(20);
+        color: $spacecadetlight;
     }
     .signup {
         padding: 5px;
@@ -10,9 +26,23 @@
 
     p {
         margin: 40px;
+        font-family: "Poppins", sans-serif;
+        color: $spacecadetdark;
+        font-size: rem-calc(10);
         @include xl {
-            margin: 0px 400px;
+            margin: 20px 400px;
         }
+    }
+
+    button {
+        border: none;
+        border-radius: 3px;
+        background-color: $tangolight;
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        font-size: rem-calc(14);
+        padding: 5px 20px;
+        color: $pearllight;
     }
 
         input {
@@ -43,15 +73,16 @@
             margin-right: 10px;
             display: inline-block;
             vertical-align: top;
+            background-color: white;
         }
         
         label span:after {
-            background: pink;
+            background: $spacecadetlight;
             width: 14px;
             height: 14px;
             position: absolute;
-            top: 3px;
-            left:5px;
+            top: 8px;
+            left: 5px;
             transition: 300ms;
             opacity: 0;
         }
@@ -59,5 +90,23 @@
         label input:checked+span:after {
             opacity: 1;
         }
+        .input-container {
+            margin-top: 20px;
+        }
+
+        span {
+            font-family: "Poppins", sans-serif;
+            font-weight: 700;
+            font-size: rem-calc(20);
+            color: $spacecadetlight;
+        }
+
+    .input-container {
+        input {
+            font-family: "Poppins", sans-serif;
+            font-weight: 500;
+            color: $spacecadet;
+        }
+    }
 }
 

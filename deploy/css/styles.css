@@ -1226,8 +1226,26 @@ header #form1 {
   background-color: #B4CEF8;
 }
 
+.newsletter {
+  background-color: #DAE7FC;
+  padding: 40px;
+}
+.newsletter i {
+  font-size: 5.3125rem;
+  color: #2B3864;
+}
 .newsletter h4 {
   text-align: center;
+  color: #2B3864;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 1.875rem;
+}
+.newsletter h5 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: #2B3864;
 }
 .newsletter .signup {
   padding: 5px;
@@ -1236,11 +1254,24 @@ header #form1 {
 }
 .newsletter p {
   margin: 40px;
+  font-family: "Poppins", sans-serif;
+  color: #1F2847;
+  font-size: 0.625rem;
 }
 @media (min-width: 1200px) {
   .newsletter p {
-    margin: 0px 400px;
+    margin: 20px 400px;
   }
+}
+.newsletter button {
+  border: none;
+  border-radius: 3px;
+  background-color: #EF8B43;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 0.875rem;
+  padding: 5px 20px;
+  color: #FDF6ED;
 }
 .newsletter input {
   display: none;
@@ -1266,13 +1297,14 @@ header #form1 {
   margin-right: 10px;
   display: inline-block;
   vertical-align: top;
+  background-color: white;
 }
 .newsletter label span:after {
-  background: pink;
+  background: #2B3864;
   width: 14px;
   height: 14px;
   position: absolute;
-  top: 3px;
+  top: 8px;
   left: 5px;
   transition: 300ms;
   opacity: 0;
@@ -1280,25 +1312,50 @@ header #form1 {
 .newsletter label input:checked + span:after {
   opacity: 1;
 }
+.newsletter .input-container {
+  margin-top: 20px;
+}
+.newsletter span {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: #2B3864;
+}
+.newsletter .input-container input {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: #212B4D;
+}
 
 footer {
-  margin: 20px;
+  padding: 20px;
+  background-color: #1F2847;
+}
+footer h5 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  color: white;
+  font-size: 1.125rem;
 }
 footer .community li {
   display: flex;
   flex-direction: column;
 }
+footer i {
+  font-size: 1.875rem;
+  color: white;
+  margin-right: 20px;
+}
 @media (min-width: 768px) {
   footer {
     display: grid;
-    margin: 20px;
     grid-template-columns: repeat(12, 1fr);
   }
   footer .community {
     grid-column: 3/4;
   }
   footer .info {
-    grid-column: 6/8;
+    grid-column: 6/9;
   }
   footer .contactus {
     grid-column: 9/11;
@@ -1316,4 +1373,45 @@ footer .community li {
   footer .rights {
     grid-column: 3/7;
   }
+}
+footer ul a {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  color: white;
+  font-size: 0.875rem;
+  text-decoration: none;
+  margin-bottom: 20px;
+}
+footer .info2 {
+  margin-bottom: 20px;
+}
+footer .link {
+  margin-right: 20px;
+}
+footer .rights {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  color: white;
+  font-size: 0.625rem;
+  text-decoration: none;
+}
+footer .contact-info {
+  margin-bottom: 30px;
+  color: white;
+}
+footer .contact-info p {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  color: white;
+  font-size: 0.875rem;
+}
+footer .contact-info address {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  color: white;
+  font-size: 0.875rem;
+  margin-bottom: 20px;
+}
+footer .contact-info p {
+  color: white;
 }
