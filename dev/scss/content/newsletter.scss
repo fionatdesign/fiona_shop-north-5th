@@ -43,6 +43,10 @@
         font-size: rem-calc(14);
         padding: 5px 20px;
         color: $pearllight;
+        &:hover {
+            background-color: $tangodark;
+            transition: .5s;
+        }
     }
 
         input {

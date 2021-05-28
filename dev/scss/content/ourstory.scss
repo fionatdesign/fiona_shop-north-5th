@@ -46,6 +46,13 @@
         font-weight: 500;
         font-size: rem-calc(14);
         color: $pearllight;
+        &:hover {
+            background-color: $tango;
+            transition: .3s;
+        }
+        &:active {
+            background: $tangodark;
+        }
     }
     .story-container {
         position: relative;

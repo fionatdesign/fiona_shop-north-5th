@@ -18,7 +18,7 @@ footer {
     }
     @include md {
         display: grid;
-            grid-template-columns: repeat(12, 1fr);
+            grid-template-columns: repeat(13, 1fr);
             .community {
                 grid-column: 3 / 4;
             }
@@ -28,7 +28,7 @@ footer {
             }
 
             .contactus {
-                grid-column: 9 / 11;
+                grid-column: 9 / 12;
             }
 
             .rights {
@@ -44,6 +44,10 @@ footer {
 
         .rights {
             grid-column: 3 / 7;
+        }
+
+        .contactus {
+            grid-column: 9 / 11;
         }
     }
     ul a {

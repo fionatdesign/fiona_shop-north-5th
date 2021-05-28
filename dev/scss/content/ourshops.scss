@@ -66,6 +66,13 @@
             padding: 5px 10px;
             color: $pearllight;
             margin-bottom: 40px;
+            &:hover {
+                background-color: $tango;
+                transition: .3s;
+            }
+            &:active {
+                background: $tangodark;
+            }
         }
     }
 

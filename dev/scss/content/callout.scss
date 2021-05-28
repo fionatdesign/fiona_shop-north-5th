@@ -5,7 +5,10 @@
     padding: 150px;
     font-family: 'Poppins', sans-serif;
     background-color: $spacecadetdark;
-    font-size: rem-calc(70);
+    --minFontSize: 40px;
+    --maxFontSize: 70px;
+    --scaler: 10vw;
+    font-size: clamp( var(--minFontSize), var(--scaler), var(--maxFontSize) );
     margin-bottom: 100px;
     .historic {
         color: $tangolight;

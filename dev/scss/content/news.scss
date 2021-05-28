@@ -120,6 +120,13 @@
             font-size: rem-calc(14);
             padding: 5px 10px;
             color: $pearllight;
+            &:hover {
+                background-color: $tango;
+                transition: .3s;
+            }
+            &:active {
+                background: $tangodark;
+            }
         }
     }
 }

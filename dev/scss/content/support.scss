@@ -31,6 +31,13 @@
         padding: 5px 20px;
         color: $pearllight;
         margin: 20px 0px;
+        &:hover {
+            background-color: $tango;
+            transition: .3s;
+        }
+        &:active {
+            background: $tangodark;
+        }
     }
     h4 {
         font-family: 'Poppins', sans-serif;
