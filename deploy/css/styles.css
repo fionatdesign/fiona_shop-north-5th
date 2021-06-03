@@ -377,6 +377,7 @@ body {
   .nav .form {
     margin: 0px;
     justify-content: flex-end;
+    margin: 10px;
   }
 }
 .nav .logo {
@@ -522,17 +523,17 @@ header #nav-container .nav-btns {
   display: inline-block;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
-  color: #A1C2F7;
+  color: #B4CEF8;
   text-decoration: none;
   padding: 20px 0px;
   width: 100%;
 }
 header #nav-container .nav-btns:hover {
-  background: #FBECDA;
+  color: #B4CEF8;
   transition: 0.3s;
 }
 header #nav-container .nav-btns:active {
-  background: #F9E4C8;
+  color: #A1C2F7;
 }
 header #nav-container ul li {
   text-align: center;
@@ -1144,7 +1145,7 @@ header #form1 {
 }
 
 .volunteer {
-  margin: 60px 10px;
+  margin: 70px 10px;
 }
 .volunteer hr {
   height: 3px;
