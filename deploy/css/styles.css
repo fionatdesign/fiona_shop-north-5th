@@ -1240,7 +1240,7 @@ header #form1 {
 }
 @media (min-width: 1200px) {
   .resources {
-    margin: 70px 200px;
+    margin: 124px 200px;
     grid-template-columns: auto 400px;
   }
 }
