@@ -1,16 +1,19 @@
 .resources {
     margin: 60px 10px;
-
+    padding: 370px 0px 0px;
     @include md {
         display: grid;
         grid-template-columns: auto 500px;
+        padding: 290px 0px 0px;
     }
     @include lg {
         grid-template-columns: auto 550px;
+        padding: 270px 0px 0px;
     }
     @include xl {
         margin: 124px 200px;
         grid-template-columns: auto 400px;
+        padding: 270px 0px 0px;
     }
     .support {
         background-image: url("../img/support.jpg");

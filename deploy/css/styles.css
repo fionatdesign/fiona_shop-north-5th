@@ -466,6 +466,12 @@ p {
   font-weight: 300;
 }
 
+header {
+  position: fixed;
+  z-index: 12;
+  width: 100%;
+  background-color: white;
+}
 header .logo h1 {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
@@ -491,14 +497,23 @@ header .logo i {
   }
 }
 header .covid {
-  margin-top: 30px;
+  margin-top: 15px;
   background-color: #FDF6ED;
-  padding: 20px 40px;
+  padding: 10px 40px;
+}
+@media (min-width: 768px) {
+  header .covid {
+    padding: 0px 40px;
+  }
+}
+header .covid .alert img {
+  height: 45px;
 }
 header .covid p {
   font-family: "Poppins", sans-serif;
   color: #2B3864;
   font-weight: 500;
+  font-size: 0.75rem;
 }
 header .covid p a {
   color: #EB7118;
@@ -579,6 +594,9 @@ header #form1 {
   color: #212B4D;
 }
 
+.hero {
+  padding-top: 260px;
+}
 .hero .hero-img {
   background-image: url("../img/hero.jpg");
   background-size: cover;
@@ -668,7 +686,17 @@ header #form1 {
 }
 
 .ourstory {
-  margin: 80px 0px 80px;
+  padding: 395px 0px 80px;
+}
+@media (min-width: 768px) {
+  .ourstory {
+    padding: 209px 0px 80px;
+  }
+}
+@media (min-width: 1024px) {
+  .ourstory {
+    padding: 183px 0px 80px;
+  }
 }
 .ourstory .ourstoryimg {
   background-image: url("../img/ourstory.jpg");
@@ -757,10 +785,17 @@ header #form1 {
 
 .ourshops {
   margin: 40px;
+  padding: 400px 0px 0px;
+}
+@media (min-width: 768px) {
+  .ourshops {
+    padding: 280px 0px 0px;
+  }
 }
 @media (min-width: 1024px) {
   .ourshops {
     margin: 0px 100px;
+    padding: 270px 0px 0px;
   }
 }
 @media (min-width: 1200px) {
@@ -865,10 +900,12 @@ header #form1 {
 .events {
   display: grid;
   margin: 0px 20px;
+  padding: 375px 0px 0px;
 }
 @media (min-width: 768px) {
   .events {
     grid-template-columns: 360px auto;
+    padding: 270px 0px 0px;
   }
 }
 @media (min-width: 1024px) {
@@ -979,7 +1016,7 @@ header #form1 {
 }
 
 .news {
-  padding: 60px 50px;
+  padding: 400px 50px 60px;
   margin-top: 70px;
   background-color: #FDF6ED;
 }
@@ -998,6 +1035,7 @@ header #form1 {
   .news {
     display: grid;
     justify-content: center;
+    padding: 300px 50px 60px;
   }
 }
 .news .newsbutton {
@@ -1146,6 +1184,7 @@ header #form1 {
 
 .volunteer {
   margin: 70px 10px;
+  padding: 380px 0px 0px;
 }
 .volunteer hr {
   height: 3px;
@@ -1164,6 +1203,11 @@ header #form1 {
   font-weight: 400;
   color: #161313;
   line-height: 1.5;
+}
+@media (min-width: 768px) {
+  .volunteer {
+    padding: 280px 0px 0px;
+  }
 }
 @media (min-width: 1024px) {
   .volunteer {
@@ -1226,22 +1270,26 @@ header #form1 {
 
 .resources {
   margin: 60px 10px;
+  padding: 370px 0px 0px;
 }
 @media (min-width: 768px) {
   .resources {
     display: grid;
     grid-template-columns: auto 500px;
+    padding: 290px 0px 0px;
   }
 }
 @media (min-width: 1024px) {
   .resources {
     grid-template-columns: auto 550px;
+    padding: 270px 0px 0px;
   }
 }
 @media (min-width: 1200px) {
   .resources {
     margin: 124px 200px;
     grid-template-columns: auto 400px;
+    padding: 270px 0px 0px;
   }
 }
 .resources .support {

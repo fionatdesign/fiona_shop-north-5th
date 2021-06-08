@@ -1,5 +1,6 @@
 .volunteer {
     margin: 70px 10px;
+    padding: 380px 0px 0px;
     hr {
         height: 3px;
         background-color: $spacecadet;
@@ -17,6 +18,9 @@
         font-weight: 400;
         color: $smokyblack;
         line-height: 1.5;
+    }
+    @include md {
+        padding: 280px 0px 0px;
     }
     @include lg {
         margin: 0px 50px;

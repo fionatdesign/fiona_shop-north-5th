@@ -1,5 +1,5 @@
 .news {
-    padding: 60px 50px;
+    padding: 400px 50px 60px;
     margin-top: 70px;
     background-color: $pearllight;
     h4 {
@@ -16,6 +16,7 @@
     @include md {
         display: grid;
         justify-content: center;
+        padding: 300px 50px 60px;
     }
 
     .newsbutton {

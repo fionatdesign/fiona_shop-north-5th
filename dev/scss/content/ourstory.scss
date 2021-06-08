@@ -1,6 +1,11 @@
 .ourstory {
-    margin: 80px 0px 80px;
-    
+    padding: 395px 0px 80px;
+    @include md {
+        padding: 209px 0px 80px;
+    }
+    @include lg {
+        padding: 183px 0px 80px;
+    }
     .ourstoryimg {
         background-image: url("../img/ourstory.jpg");
         height: 400px;

@@ -1,7 +1,12 @@
 .ourshops {
     margin: 40px;
+    padding: 400px 0px 0px;
+    @include md {
+        padding: 280px 0px 0px;
+    }
     @include lg {
         margin: 0px 100px;
+        padding: 270px 0px 0px;
     }
     @include xl {
         margin: 75px 240px;
